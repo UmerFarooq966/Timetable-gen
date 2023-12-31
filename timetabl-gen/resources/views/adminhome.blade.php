@@ -21,15 +21,17 @@
 
                             <x-card class="d-inline-grid py-5 mx-5">
 
-                                <div class="ms-auto">
+                                <div class="card-body">
+                                    <div class="ms-auto">
+                                        <h2 class="text-2xl">
+                                            {{ $course->name }}
+                                        </h2>
 
-                                     <h2 class="text-2xl">
-                                         {{$course ->name}}
-                                      </h2>
+                                        <a href="/addtime/{{ $course->id }}">
+                                            Add Time
+                                        </a>
+                                    </div>
 
-                                    <a href="/addtime/{{$course->id}}">
-                                      Add Time
-                                    </a>
 
                                 </div>
 

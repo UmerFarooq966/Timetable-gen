@@ -30,6 +30,7 @@ class HomeController extends Controller
         $user = auth()->user(); // Assuming the user is logged in
         $enrolledCourses = $user->enrolledCourses;
 
+       // dd($enrolledCourses);
         return view('home',['enrolledCourses' =>$enrolledCourses]);
     }
 
